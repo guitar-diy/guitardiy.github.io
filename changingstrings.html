@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Changing strings with Guitar DIY</title>
+  <meta name="description" content="Find out how to get the most out of your guitar!">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html"><img class="header__logo" src="logo.svg" alt="Guitar DIY"></a>
+    <form class="search-form" autocomplete="off">
+      <input type="text" id="searchFormInput" class="search-form__input awesomplete" placeholder="Search for a tutorial" name="search" list="tutorials" data-minchars="1" data-autofirst="true">
+      <datalist id="tutorials">
+        <option>Tuning your guitar</option>
+        <option>Changing strings</option>
+        <option>Replacing tuners</option>
+        <option>Straplocks</option>
+        <option>Correcting intonation</option>
+        <option>Adjust neck</option>
+      </datalist>
+      <button type="button" id="searchFormButton" class="search-form__button" onclick="searchToggle()"><i class="fas fa-search"></i></button>
+    </form>
+  </header>
+
+  <main class="article_align">
+    <article class="article">
+      <div class="article__header">
+        <h2 class="article__title">Changing strings</h2>
+        <time class="time time_short">10m</time>
+      </div>
+      <img class="article__header-image" alt="A close-up of guitar strings against a fretboard" src="img/strings.jpg">
+      <p class="article__lead">Strings break. It happens. But the best we can do is pick ourselves up and get that guitar restrung.</p>
+      <p class="article__paragraph article__step">It’s best to change your strings around every 6 months, but this depends on usage. If one string breaks, unless you just changed them, it’s probably a good idea to change all your strings.</p>
+      <div class="article__step">
+        <h2 class="article__heading">What you'll need</h2>
+        <ul class="article__list">
+          <li class="article__list-item">Strings</li>
+          <li class="article__list-item">Wire cutters</li>
+        </ul>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 1 – Remove the string</h2>
+        <p class="article__paragraph">If you are changing all your strings, it is best to start with the bottom E, however if you need to change one, just change that one.</p>
+        <p class="article__paragraph">Start by turning the tuning peg to loosen off the string. When the string is loose enough, you should be able to pull the string out of the hole in the tuning peg, but you may have to untie it. Follow the string down to the bridge and remove it. Remember where you remove it from as you’ll need to pull the new string through the same place.</p>
+        <h3 class="article__subheading">TIP</h3>
+        <p class="article__paragraph">Now is a good time to give the neck a quick clean with a cloth.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 2 – Restringing</h2>
+        <p class="article__paragraph">Get your new strings and sort out which one should go where. The heaviest gauge string will be the bottom E and the lightest the top E. Push the string through the bridge, going the opposite way you took the old string out. Pull it through and up to its respective tuning peg.</p>
+        <p class="article__paragraph">Ensure the hole in the tuning peg is facing down the neck and pull the string through it. Leave around 5cm of slack in the string so you have something to tighten. Crimp the part of the string that is past the tuning peg hole by wrapping it around the tuning peg a couple times and then unwrapping. This will stop the string from slipping out of the peg.</p>
+        <p class="article__paragraph">Now you can start turning the tuning peg to tighten the string. Make sure to do it so the string wraps the same way as the old one. As the string first overlaps itself, push the string through the hole under the rest of the string. Keep tightening and make sure the string through the hole stays above the rest of the string. This locks the string in place and should help the guitar stay in tune longer.</p>
+        <p class="article__paragraph">Make sure to not over-tighten the string, as this can make it break.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 3 – Tune the string</h2>
+        <p class="article__paragraph">Slowly tune the string to its desired note. If you don’t know how to tune, <a href="tuningyourguitar.html">check out this tutorial</a>.</p>
+        <p class="article__paragraph">You will notice that after a few minutes, the string will go out of tune. This is because the string is stretching. The string should be fully stretched after a day or so, so just keep tuning it during that time.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 4 – Repeat for all the strings</h2>
+        <p class="article__paragraph">Repeat steps 1-3 for the rest of the strings and you will have a brand new set of strings ripe for the playing. Enjoy!</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Changing Strings Quiz - How much can you remember?</h2>
+        <div class="quiz" id="quizChangingStrings">
+          <div class="quiz__question">
+            <div class="quiz__question-title">How much slack should you leave in a string before you tighten it?</div>
+            <div class="quiz__question-answers">
+              <ol>
+                <li><input type="radio" name="q1" value="a"> No slack<br /></li>
+                <li><input type="radio" name="q1" value="b"> 6 inches<br /></li>
+                <li><input type="radio" name="q1" value="c"> 5 centimetres<br /></li>
+              </ol>
+            </div>
+          </div>
+          <div class="quiz__question">
+            <div class="quiz__question-title">Why will a new string go out of tune soon after you put it on the guitar?</div>
+            <div class="quiz__question-answers">
+              <ol>
+                <li><input type="radio" name="q2" value="a"> It is stretching<br /></li>
+                <li><input type="radio" name="q2" value="b"> It was put on incorrectly<br /></li>
+                <li><input type="radio" name="q2" value="c"> The string is faulty<br /></li>
+              </ol>
+            </div>
+          </div>
+          <button class="quiz__button" type="button" onclick="quizShowResults();">Check Answers</button>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer__tutorials">
+      <h2 class="footer__tutorials-title">Tutorials</h2>
+      <ul class="footer__tutorials-list">
+        <li><a href="tuningyourguitar.html">Tuning your guitar</a></li>
+        <li><a href="changingstrings.html">Changing strings</a></li>
+        <li><a href="replacingtuners.html">Replacing tuners</a></li>
+        <li><a href="straplocks.html">Straplocks</a></li>
+        <li><a href="correctingintonation.html">Correcting intonation</a></li>
+        <li><a href="adjustneck.html">Adjust neck</a></li>
+      </ul>
+    </nav>
+    <p class="footer__credit">Created by <a href="https://griffedge.github.io/">Griffen Edge</a></p>
+  </footer>
+
+  <script src="scripts/awesomplete.js" async></script>
+  <script src="scripts/quizlib.js" async></script>
+  <script src="scripts/script.js"></script>
+  <script>
+    var quiz = new Quiz('quizChangingStrings', ['c', 'a']);
+
+  </script>
+</body>
+
+</html>

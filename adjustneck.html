@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Adjust neck with Guitar DIY</title>
+  <meta name="description" content="Find out how to get the most out of your guitar!">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html"><img class="header__logo" src="logo.svg" alt="Guitar DIY"></a>
+    <form class="search-form" autocomplete="off">
+      <input type="text" id="searchFormInput" class="search-form__input awesomplete" placeholder="Search for a tutorial" name="search" list="tutorials" data-minchars="1" data-autofirst="true">
+      <datalist id="tutorials">
+        <option>Tuning your guitar</option>
+        <option>Changing strings</option>
+        <option>Replacing tuners</option>
+        <option>Straplocks</option>
+        <option>Correcting intonation</option>
+        <option>Adjust neck</option>
+      </datalist>
+      <button type="button" id="searchFormButton" class="search-form__button" onclick="searchToggle()"><i class="fas fa-search"></i></button>
+    </form>
+  </header>
+
+  <main class="article_align">
+    <article class="article">
+      <div class="article__header">
+        <h2 class="article__title">Adjust neck</h2>
+        <time class="time time_long">days</time>
+      </div>
+      <img class="article__header-image" alt="A guitar neck" src="img/neck.jpg">
+      <p class="article__lead"><a href="tuningyourguitar.html">Tuned your guitar</a> but things are still sounding weird? Break out the hex key and some patience.</p>
+      <p class="article__paragraph article__step">The curve of your guitars neck is controlled by the truss rod, a metal bar that runs through the middle of the neck. Different strings or time can both cause the neck to have an unideal curvature, which can lead to fret buzzing.</p>
+      <div class="article__step">
+        <h2 class="article__heading">What you'll need</h2>
+        <ul class="article__list">
+          <li class="article__list-item">Hex key</li>
+          <li class="article__list-item">Patience</li>
+          <li class="article__list-item">Screwdriver</li>
+        </ul>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 1 – Evaluate the neck</h2>
+        <p class="article__paragraph">Start by holding down the top e string at both the 1st fret and the 14th fret and at the same time check the gap between the string and the 6th fret. A gap around the size of a business card is good, any smaller or bigger and you probably want to adjust the neck.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 2 – Find the truss rod</h2>
+        <p class="article__paragraph">Access to the truss rod is usually where the neck and head of the guitar meet. Some guitars have covers over the truss rod, which can be easily removed by unscrewing them. You will probably want to loosen the middle strings to get them out of the way while you work.</p>
+        <p class="article__paragraph">If you are unlucky, you may have a guitar whose truss rod is adjusted from the between the neck and the body. If this is the case, you are best off visiting a guitar luthier who can adjust it for you.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 3 – Adjust the truss rod</h2>
+        <p class="article__paragraph">To adjust the truss rod, first find the appropriate size hex key.</p>
+        <p class="article__paragraph">Turning the rod clockwise will tighten it, which will cause the neck to straighten, reducing the distance between the string and the fret.</p>
+        <p class="article__paragraph">Turning the rod counter-clockwise will loosen it, causing the neck to gain more relief and increase the distance between the string and the fret.</p>
+        <p class="article__paragraph">Adjust accordingly. Only turn the rod 1 or 2 quarter turns at a time, any more and it could cause damage to the neck.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 4 – Wait</h2>
+        <p class="article__paragraph">Once you’ve turned the truss rod, retune all the strings on your guitar and give the neck around a day to settle. After waiting you can then repeat all the steps until the neck is at the position you prefer. While a business card size gap is good between the 6th fret and the string, it depends on your preference.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Adjust Neck Quiz - How much can you remember?</h2>
+        <div class="quiz" id="quizAdjustNeck">
+          <div class="quiz__question">
+            <div class="quiz__question-title">Which frets should you hold down to evaluate the neck?</div>
+            <div class="quiz__question-answers">
+              <ol>
+                <li><input type="radio" name="q1" value="a"> The 1st and 12th fret<br /></li>
+                <li><input type="radio" name="q1" value="b"> The 6th and 14th fret<br /></li>
+                <li><input type="radio" name="q1" value="c"> The 1st and 14th fret<br /></li>
+              </ol>
+            </div>
+          </div>
+          <div class="quiz__question">
+            <div class="quiz__question-title">Where can you find access to the truss rod?</div>
+            <div class="quiz__question-answers">
+              <ol>
+                <li><input type="radio" name="q2" value="a"> Next to the input jack<br /></li>
+                <li><input type="radio" name="q2" value="b"> The bridge<br /></li>
+                <li><input type="radio" name="q2" value="c"> Between the neck and the head<br /></li>
+              </ol>
+            </div>
+          </div>
+          <div class="quiz__question">
+            <div class="quiz__question-title">How far should you turn the truss rod at a time?</div>
+            <div class="quiz__question-answers">
+              <ol>
+                <li><input type="radio" name="q3" value="a"> 10 full rotations<br /></li>
+                <li><input type="radio" name="q3" value="b"> 1-2 half rotations<br /></li>
+                <li><input type="radio" name="q3" value="c"> 1-2 quarter rotations<br /></li>
+              </ol>
+            </div>
+          </div>
+          <div class="quiz__question">
+            <div class="quiz__question-title">How long should you wait between neck adjustments?</div>
+            <div class="quiz__question-answers">
+              <ol>
+                <li><input type="radio" name="q4" value="a"> A day<br /></li>
+                <li><input type="radio" name="q4" value="b"> A month<br /></li>
+                <li><input type="radio" name="q4" value="c"> A year<br /></li>
+              </ol>
+            </div>
+          </div>
+          <button class="quiz__button" type="button" onclick="quizShowResults();">Check Answers</button>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer__tutorials">
+      <h2 class="footer__tutorials-title">Tutorials</h2>
+      <ul class="footer__tutorials-list">
+        <li><a href="tuningyourguitar.html">Tuning your guitar</a></li>
+        <li><a href="changingstrings.html">Changing strings</a></li>
+        <li><a href="replacingtuners.html">Replacing tuners</a></li>
+        <li><a href="straplocks.html">Straplocks</a></li>
+        <li><a href="correctingintonation.html">Correcting intonation</a></li>
+        <li><a href="adjustneck.html">Adjust neck</a></li>
+      </ul>
+    </nav>
+    <p class="footer__credit">Created by <a href="https://griffedge.github.io/">Griffen Edge</a></p>
+  </footer>
+
+  <script src="scripts/awesomplete.js" async></script>
+  <script src="scripts/quizlib.js" async></script>
+  <script src="scripts/script.js"></script>
+  <script>
+    var quiz = new Quiz('quizAdjustNeck', ['c', 'b', 'c', 'a']);
+
+  </script>
+</body>
+
+</html>

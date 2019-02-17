@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Correcting intonation with Guitar DIY</title>
+  <meta name="description" content="Find out how to get the most out of your guitar!">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html"><img class="header__logo" src="logo.svg" alt="Guitar DIY"></a>
+    <form class="search-form" autocomplete="off">
+      <input type="text" id="searchFormInput" class="search-form__input awesomplete" placeholder="Search for a tutorial" name="search" list="tutorials" data-minchars="1" data-autofirst="true">
+      <datalist id="tutorials">
+        <option>Tuning your guitar</option>
+        <option>Changing strings</option>
+        <option>Replacing tuners</option>
+        <option>Straplocks</option>
+        <option>Correcting intonation</option>
+        <option>Adjust neck</option>
+      </datalist>
+      <button type="button" id="searchFormButton" class="search-form__button" onclick="searchToggle()"><i class="fas fa-search"></i></button>
+    </form>
+  </header>
+
+  <main class="article_align">
+    <article class="article">
+      <div class="article__header">
+        <h2 class="article__title">Correcting intonation</h2>
+        <time class="time time_medium">30m</time>
+      </div>
+      <img class="article__header-image" alt="A close-up of a guitar bridge" src="img/intonation.jpg" style="object-position: 50% 25%">
+      <p class="article__lead">Tried <a href="adjustneck.html">adjusting the neck</a> on your guitar and things still sound off? Your guitar may need its intonation adjusted.</p>
+      <div class="article__step">
+        <h2 class="article__heading">What you'll need</h2>
+        <ul class="article__list">
+          <li class="article__list-item">Screwdriver</li>
+          <li class="article__list-item">Tuner</li>
+        </ul>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 1 – Check the intonation</h2>
+        <p class="article__paragraph">The first thing you want to do is make sure your <a href="tuningyourguitar.html">guitar is in tune</a>. Play the open bottom E string and make sure your tuner reads it as E. Then hold down the 12th fret on the same string and see pluck it. If the tuner reads the same note, that string is okay and will not need to be adjusted. It the note is different, it will need to be.</p>
+        <p class="article__paragraph">Continue this process with each string and take note of which ones you will need to correct and whether they were higher or lower than the open note.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 2 – Adjust the bridge</h2>
+        <p class="article__paragraph">To correct a strings intonation, you will need to adjust the bridge. Follow the string that needs to be corrected down to the bridge and you will see the saddle, this is how you will correct it. Using a screwdriver, you can bring the saddle in and out. If the note at the 12th fret is too low you need to bring the saddle out to shorten the string, this is done by turning the saddle screw counter-clockwise. If the note is too high, do the opposite.</p>
+        <p class="article__paragraph">Very small adjustments are the way to go here, half turns, otherwise you might overshoot the right point and end up with the opposite problem.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 3 – Retune</h2>
+        <p class="article__paragraph"> After each turn, retune the string and check its intonation. Repeat until the string reads the same note on the open and at the 12th fret. Then continue with each string until the guitar has correct intonation.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Correcting Intonation Quiz - How much can you remember?</h2>
+        <div class="quiz" id="quizCorrectingIntonation">
+          <div class="quiz__question">
+            <div class="quiz__question-title">How can you check the intonation of a string?</div>
+            <div class="quiz__question-answers">
+              <ol>
+                <li><input type="radio" name="q1" value="a"> By tuning it<br /></li>
+                <li><input type="radio" name="q1" value="b"> Comparing the note of a string when open and at the 12th fret<br /></li>
+                <li><input type="radio" name="q1" value="c"> Replacing the tuning pegs<br /></li>
+              </ol>
+            </div>
+          </div>
+          <div class="quiz__question">
+            <div class="quiz__question-title">What do you need to do to make a strings' intonation higher?</div>
+            <div class="quiz__question-answers">
+              <ol>
+                <li><input type="radio" name="q2" value="a"> Bringing the saddle in<br /></li>
+                <li><input type="radio" name="q2" value="b"> Removing the saddle<br /></li>
+                <li><input type="radio" name="q2" value="c"> Bringing the saddle out<br /></li>
+              </ol>
+            </div>
+          </div>
+          <button class="quiz__button" type="button" onclick="quizShowResults();">Check Answers</button>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer__tutorials">
+      <h2 class="footer__tutorials-title">Tutorials</h2>
+      <ul class="footer__tutorials-list">
+        <li><a href="tuningyourguitar.html">Tuning your guitar</a></li>
+        <li><a href="changingstrings.html">Changing strings</a></li>
+        <li><a href="replacingtuners.html">Replacing tuners</a></li>
+        <li><a href="straplocks.html">Straplocks</a></li>
+        <li><a href="correctingintonation.html">Correcting intonation</a></li>
+        <li><a href="adjustneck.html">Adjust neck</a></li>
+      </ul>
+    </nav>
+    <p class="footer__credit">Created by <a href="https://griffedge.github.io/">Griffen Edge</a></p>
+  </footer>
+
+  <script src="scripts/awesomplete.js" async></script>
+  <script src="scripts/quizlib.js" async></script>
+  <script src="scripts/script.js"></script>
+  <script>
+    var quiz = new Quiz('quizCorrectingIntonation', ['b', 'c']);
+
+  </script>
+</body>
+
+</html>

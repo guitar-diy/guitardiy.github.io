@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Guitar DIY</title>
+  <meta name="description" content="Find out how to get the most out of your guitar!">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html"><img id="headerLogo" class="header__logo" src="logo.svg" alt="Guitar DIY"></a>
+    <form class="search-form" autocomplete="off">
+      <input type="text" id="searchFormInput" class="search-form__input awesomplete" placeholder="Search for a tutorial" name="search" list="tutorials" data-minchars="1" data-autofirst="true">
+      <datalist id="tutorials">
+        <option>Tuning your guitar</option>
+        <option>Changing strings</option>
+        <option>Replacing tuners</option>
+        <option>Straplocks</option>
+        <option>Correcting intonation</option>
+        <option>Adjust neck</option>
+      </datalist>
+          <button type="button" id="searchFormButton" class="search-form__button" onclick="searchToggle()"><i class="fas fa-search"></i></button>
+    </form>
+  </header>
+
+  <main class="homepage-grid">
+    <article class="article-card article-card_large">
+      <a href="tuningyourguitar.html">
+        <div class="article-card__header">
+          <h2 class="article-card__title">Tuning your guitar</h2>
+          <time class="time time_short">2m</time>
+        </div>
+        <img class="article-card__image" alt="A person tuning their guitar" src="img/tuning.jpg" style="object-position: 90% 80%">
+        <p class="article-card__description">Having your guitar in tune is super important whenever you play. Luckily tuning your guitar is pretty easy, and once you get the hang of it can be done in a snap.</p>
+      </a>
+    </article>
+
+    <article class="article-card">
+      <a href="changingstrings.html">
+        <div class="article-card__header">
+          <h2 class="article-card__title">Changing strings</h2>
+          <time class="time time_short">10m</time>
+        </div>
+        <img class="article-card__image" alt="A close-up of guitar strings against a fretboard" src="img/strings.jpg">
+      </a>
+    </article>
+
+    <article class="article-card">
+      <a href="replacingtuners.html">
+        <div class="article-card__header">
+          <h2 class="article-card__title">Replacing tuners</h2>
+          <time class="time time_medium">30m</time>
+        </div>
+        <img class="article-card__image" alt="Guitar tuners on a guitar" src="img/tuners.jpg">
+      </a>
+    </article>
+
+    <article class="article-card">
+      <a href="straplocks.html">
+        <div class="article-card__header">
+          <h2 class="article-card__title">Straplocks</h2>
+          <time class="time time_short">10m</time>
+        </div>
+        <img class="article-card__image" alt="A person wearing a guitar with a strap" src="img/strap.jpg"  style="object-position: 50% 60%">
+      </a>
+    </article>
+
+    <article class="article-card">
+      <a href="correctingintonation.html">
+        <div class="article-card__header">
+          <h2 class="article-card__title">Correcting intonation</h2>
+          <time class="time time_medium">30m</time>
+        </div>
+        <img class="article-card__image" alt="A close-up of a guitar bridge" src="img/intonation.jpg" style="object-position: 50% 25%">
+      </a>
+    </article>
+
+    <article class="article-card">
+      <a href="adjustneck.html">
+        <div class="article-card__header">
+          <h2 class="article-card__title">Adjust neck</h2>
+          <time class="time time_long">days</time>
+        </div>
+        <img class="article-card__image" alt="A guitar neck" src="img/neck.jpg">
+      </a>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer__tutorials">
+      <h2 class="footer__tutorials-title">Tutorials</h2>
+      <ul class="footer__tutorials-list">
+        <li><a href="tuningyourguitar.html">Tuning your guitar</a></li>
+        <li><a href="changingstrings.html">Changing strings</a></li>
+        <li><a href="replacingtuners.html">Replacing tuners</a></li>
+        <li><a href="straplocks.html">Straplocks</a></li>
+        <li><a href="correctingintonation.html">Correcting intonation</a></li>
+        <li><a href="adjustneck.html">Adjust neck</a></li>
+      </ul>
+    </nav>
+      <p class="footer__credit">Created by <a href="https://griffedge.github.io/">Griffen Edge</a></p>
+  </footer>
+
+  <script src="scripts/awesomplete.js" async></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

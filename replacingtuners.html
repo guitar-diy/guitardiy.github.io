@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Replacing tuners with Guitar DIY</title>
+  <meta name="description" content="Find out how to get the most out of your guitar!">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html"><img class="header__logo" src="logo.svg" alt="Guitar DIY"></a>
+    <form class="search-form" autocomplete="off">
+      <input type="text" id="searchFormInput" class="search-form__input awesomplete" placeholder="Search for a tutorial" name="search" list="tutorials" data-minchars="1" data-autofirst="true">
+      <datalist id="tutorials">
+        <option>Tuning your guitar</option>
+        <option>Changing strings</option>
+        <option>Replacing tuners</option>
+        <option>Straplocks</option>
+        <option>Correcting intonation</option>
+        <option>Adjust neck</option>
+      </datalist>
+      <button type="button" id="searchFormButton" class="search-form__button" onclick="searchToggle()"><i class="fas fa-search"></i></button>
+    </form>
+  </header>
+
+  <main class="article_align">
+    <article class="article">
+      <div class="article__header">
+        <h2 class="article__title">Replacing tuners</h2>
+        <time class="time time_medium">30m</time>
+      </div>
+      <img class="article__header-image" alt="Guitar tuners on a guitar" src="img/tuners.jpg">
+      <p class="article__lead">Replacing your tuners can greatly improve how long your guitar stays in tune and some types of tuners can cut the amount of time it takes to change strings drastically.</p>
+      <div class="article__step">
+        <h2 class="article__heading">What you'll need</h2>
+        <ul class="article__list">
+          <li class="article__list-item">Screwdriver</li>
+          <li class="article__list-item">Strings</li>
+          <li class="article__list-item">Tuning pegs</li>
+        </ul>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 1 – Make sure the new tuning pegs are the same size as the old ones</h2>
+        <p class="article__paragraph">Different guitar manufacturers use different size holes for tuning pegs, so it’s highly recommended that you double check the new tuning pegs you have are the right size for your guitar before you start removing parts.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 2 – Remove the strings</h2>
+        <p class="article__paragraph">Start by turning the tuning peg to loosen off the string. When the string is loose enough, you should be able to pull the string out of the hole in the tuning peg, but you may have to untie it. Follow the string down to the bridge and remove it. Remember where you remove it from as you’ll need to pull the new strings through the same place.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 3 – Remove the old tuning pegs</h2>
+        <p class="article__paragraph">Turn over your guitar and you should see on the back of the tuning pegs are screws. Using a screwdriver, unscrew each tuning peg from the head and remove the tuning peg from the guitar. Keep them in a safe place in case you ever want to use them again.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 4 – Put on the new tuning pegs</h2>
+        <p class="article__paragraph">Place the new tuning pegs in the same positions as the old ones and screw them in.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 5 – Restring the guitar</h2>
+        <p class="article__paragraph">Put new strings on the guitar. If you’re unsure of how to, check out <a href="changingstrings.html">how to change strings</a>.</p>
+        <p class="article__paragraph">You now have new tuning pegs! They should keep your guitar in tune for longer.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Replacing Tuners Quiz - How much can you remember?</h2>
+        <div class="quiz" id="quizReplacingTuners">
+          <div class="quiz__question">
+            <div class="quiz__question-title">What should you do before removing any parts?</div>
+            <div class="quiz__question-answers">
+              <ol>
+                <li><input type="radio" name="q1" value="a"> Check the size of the tuning pegs<br /></li>
+                <li><input type="radio" name="q1" value="b"> Remove all the strings<br /></li>
+                <li><input type="radio" name="q1" value="c"> Submerge the guitar<br /></li>
+              </ol>
+            </div>
+          </div>
+          <div class="quiz__question">
+            <div class="quiz__question-title">Where should the new tuning pegs go?</div>
+            <div class="quiz__question-answers">
+              <ol>
+                <li><input type="radio" name="q2" value="a"> In the pickup cavity<br /></li>
+                <li><input type="radio" name="q2" value="b"> On top of the old ones<br /></li>
+                <li><input type="radio" name="q2" value="c"> Where the old ones were<br /></li>
+              </ol>
+            </div>
+          </div>
+          <button class="quiz__button" type="button" onclick="quizShowResults();">Check Answers</button>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer__tutorials">
+      <h2 class="footer__tutorials-title">Tutorials</h2>
+      <ul class="footer__tutorials-list">
+        <li><a href="tuningyourguitar.html">Tuning your guitar</a></li>
+        <li><a href="changingstrings.html">Changing strings</a></li>
+        <li><a href="replacingtuners.html">Replacing tuners</a></li>
+        <li><a href="straplocks.html">Straplocks</a></li>
+        <li><a href="correctingintonation.html">Correcting intonation</a></li>
+        <li><a href="adjustneck.html">Adjust neck</a></li>
+      </ul>
+    </nav>
+    <p class="footer__credit">Created by <a href="https://griffedge.github.io/">Griffen Edge</a></p>
+  </footer>
+
+  <script src="scripts/awesomplete.js" async></script>
+  <script src="scripts/quizlib.js" async></script>
+  <script src="scripts/script.js"></script>
+  <script>
+    var quiz = new Quiz('quizReplacingTuners', ['a', 'c']);
+
+  </script>
+</body>
+
+</html>

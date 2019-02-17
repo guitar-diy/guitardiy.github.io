@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Straplocks with Guitar DIY</title>
+  <meta name="description" content="Find out how to get the most out of your guitar!">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html"><img class="header__logo" src="logo.svg" alt="Guitar DIY"></a>
+    <form class="search-form" autocomplete="off">
+      <input type="text" id="searchFormInput" class="search-form__input awesomplete" placeholder="Search for a tutorial" name="search" list="tutorials" data-minchars="1" data-autofirst="true">
+      <datalist id="tutorials">
+        <option>Tuning your guitar</option>
+        <option>Changing strings</option>
+        <option>Replacing tuners</option>
+        <option>Straplocks</option>
+        <option>Correcting intonation</option>
+        <option>Adjust neck</option>
+      </datalist>
+      <button type="button" id="searchFormButton" class="search-form__button" onclick="searchToggle()"><i class="fas fa-search"></i></button>
+    </form>
+  </header>
+
+  <main class="article_align">
+    <article class="article">
+      <div class="article__header">
+        <h2 class="article__title">Strap-locks</h2>
+        <time class="time time_short">10m</time>
+      </div>
+      <img class="article__header-image" alt="A person wearing a guitar with a strap" src="img/strap.jpg" style="object-position: 50% 60%">
+      <p class="article__lead">Keep your guitar safe. Use strap-locks.</p>
+      <p class="article__paragraph article__step">It’s a sad fact of life, but sometimes guitar straps don’t hang on quite as well to our babies as we would hope. Luckily for us, strap-locks exist and they are very easy to put on.</p>
+      <div class="article__step">
+        <h2 class="article__heading">What you'll need</h2>
+        <ul class="article__list">
+          <li class="article__list-item">Screwdriver</li>
+          <li class="article__list-item">Strap-locks</li>
+          <li class="article__list-item">Strap</li>
+        </ul>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 1 - Remove old strap buttons</h2>
+        <p class="article__paragraph">Take off any strap that may be on the buttons. Using a screwdriver, unscrew the screw in the middle of each strap button. Place the strap buttons somewhere safe if you ever want them later.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 2 – Put on new strap-lock buttons</h2>
+        <p class="article__paragraph">Doing the opposite of step 1, screw in the strap-lock buttons into the same holes as the old ones. If you have felt pads for the buttons, make sure to put those in between the guitar body and the buttons.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 3 – Put on strap attachments</h2>
+        <p class="article__paragraph">This step will vary between brands, so it is best to check the instructions that come with the strap-locks. However, it normally involves placing part of the attachment through the hole in the strap and placing the other part on the other side of the strap, locking the attachment in place.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 4 – Attach the strap to the buttons</h2>
+        <p class="article__paragraph">This will also depend on the brand but usually involves pressing a button on the strap attachment as you push it into the button.</p>
+        <p class="article__paragraph">You now have strap locks on your guitar! Feel your worries fall away as you know that strap is not falling off easily.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Strap-locks Quiz - How much can you remember?</h2>
+        <div class="quiz" id="quizStraplocks">
+          <div class="quiz__question">
+            <div class="quiz__question-title">How do you remove the old strap buttons?</div>
+            <div class="quiz__question-answers">
+              <ol>
+                <li><input type="radio" name="q1" value="a"> Pry them off<br /></li>
+                <li><input type="radio" name="q1" value="b"> Unscrew them<br /></li>
+                <li><input type="radio" name="q1" value="c"> Use a strap to pull them off<br /></li>
+              </ol>
+            </div>
+          </div>
+          <div class="quiz__question">
+            <div class="quiz__question-title">What do strap-locks help prevent?</div>
+            <div class="quiz__question-answers">
+              <ol>
+                <li><input type="radio" name="q2" value="a"> Dropping your guitar<br /></li>
+                <li><input type="radio" name="q2" value="b"> Theft of straps<br /></li>
+                <li><input type="radio" name="q2" value="c"> Peace of mind<br /></li>
+              </ol>
+            </div>
+          </div>
+          <button class="quiz__button" type="button" onclick="quizShowResults();">Check Answers</button>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer__tutorials">
+      <h2 class="footer__tutorials-title">Tutorials</h2>
+      <ul class="footer__tutorials-list">
+        <li><a href="tuningyourguitar.html">Tuning your guitar</a></li>
+        <li><a href="changingstrings.html">Changing strings</a></li>
+        <li><a href="replacingtuners.html">Replacing tuners</a></li>
+        <li><a href="straplocks.html">Straplocks</a></li>
+        <li><a href="correctingintonation.html">Correcting intonation</a></li>
+        <li><a href="adjustneck.html">Adjust neck</a></li>
+      </ul>
+    </nav>
+    <p class="footer__credit">Created by <a href="https://griffedge.github.io/">Griffen Edge</a></p>
+  </footer>
+
+  <script src="scripts/awesomplete.js" async></script>
+  <script src="scripts/quizlib.js" async></script>
+  <script src="scripts/script.js"></script>
+  <script>
+    var quiz = new Quiz('quizStraplocks', ['b', 'a']);
+
+  </script>
+</body>
+
+</html>

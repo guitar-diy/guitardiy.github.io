@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tuning your guitar with Guitar DIY</title>
+  <meta name="description" content="Find out how to get the most out of your guitar!">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html"><img class="header__logo" src="logo.svg" alt="Guitar DIY"></a>
+    <form class="search-form" autocomplete="off">
+      <input type="text" id="searchFormInput" class="search-form__input awesomplete" placeholder="Search for a tutorial" name="search" list="tutorials" data-minchars="1" data-autofirst="true">
+      <datalist id="tutorials">
+        <option>Tuning your guitar</option>
+        <option>Changing strings</option>
+        <option>Replacing tuners</option>
+        <option>Straplocks</option>
+        <option>Correcting intonation</option>
+        <option>Adjust neck</option>
+      </datalist>
+      <button type="button" id="searchFormButton" class="search-form__button" onclick="searchToggle()"><i class="fas fa-search"></i></button>
+    </form>
+  </header>
+
+  <main class="article_align">
+    <article class="article">
+      <div class="article__header">
+        <h2 class="article__title">Tuning your guitar</h2>
+        <time class="time time_short">2m</time>
+      </div>
+      <img class="article__header-image" alt="A person tuning their guitar" src="img/tuning.jpg" style="object-position: 90% 80%">
+      <p class="article__lead">Having your guitar in tune is super important whenever you play. Luckily tuning your guitar is easy, and once you get the hang of it can be done in a snap.</p>
+      <p class="article__paragraph article__step">There are a few different ways to tune a guitar such as with a tuner or by ear. Using a tuner is by far the easiest way, however they have a habit of running out of battery at inopportune times so it’s always well to know some other techniques.</p>
+      <div class="article__step">
+        <h2 class="article__heading">What you'll need</h2>
+        <ul class="article__list">
+          <li class="article__list-item">Tuner</li>
+          <li class="article__list-item">Keen ear</li>
+        </ul>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 1 - Tuning the bottom E string</h2>
+        <p class="article__paragraph">It’s always a wise idea to start tuning your guitar from the bottom E string, which should be the thickest string with the lowest pitch. </p>
+        <h3 class="article__subheading">With a tuner</h3>
+        <p class="article__paragraph">If you’re using a tuner, turn it on and place it near the guitar or amp (the quieter your surroundings are the easier). Pluck the string and you should see a reading on the tuner. Turn the tuning peg, in which direction depends, and the tuner reading should slightly change. When in tune, the tuner should have a big E and something indicating success on it.</p>
+        <h3 class="article__subheading">By ear</h3>
+        <p class="article__paragraph">Tuning by ear is a bit more difficult, as there’s no visual confirmation you’ve gotten the string in tune. Start by playing an E note, either on a tuned instrument or using the handy string diagram below, and adjust the tuning peg while plucking the string until the note the string is making matches up with the note you’re playing.</p>
+        <div class="string-diagram">
+          <img class="string-diagram__image" src="img/strings.svg">
+          <p class="string-diagram__text">The standard tuning of a guitar. Note that the strings get thinner as the open note gets higher.</p>
+        </div>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Step 2 – The rest of the strings</h2>
+        <p class="article__paragraph">Tuning the rest of the strings is pretty much the same process as the first, just change the note. The standard tuning, from thickest string to thinnest is E A D G B e. Tune each string to these, and your guitar will be back and ready to shred.</p>
+      </div>
+      <div class="article__step">
+        <p class="article__paragraph">If your strings keep seeming to come out of tune, your <a href="changingstrings.html">strings might need changing</a> or even your <a href="replacingtuners.html">tuning pegs replacing</a>.</p>
+      </div>
+      <div class="article__step">
+        <h2 class="article__heading">Tuning Your Guitar Quiz - How much can you remember?</h2>
+        <div class="quiz" id="quizTuningYourGuitar">
+          <div class="quiz__question">
+            <div class="quiz__question-title">Why is it a good idea to know different methods of tuning?</div>
+            <div class="quiz__question-answers">
+              <ol>
+                <li><input type="radio" name="q1" value="a"> To make tuning more accurate<br /></li>
+                <li><input type="radio" name="q1" value="b"> Different types of guitars have to be tuned differently<br /></li>
+                <li><input type="radio" name="q1" value="c"> Batteries can be unreliable<br /></li>
+              </ol>
+            </div>
+          </div>
+          <button class="quiz__button" type="button" onclick="quizShowResults();">Check Answers</button>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer__tutorials">
+      <h2 class="footer__tutorials-title">Tutorials</h2>
+      <ul class="footer__tutorials-list">
+        <li><a href="tuningyourguitar.html">Tuning your guitar</a></li>
+        <li><a href="changingstrings.html">Changing strings</a></li>
+        <li><a href="replacingtuners.html">Replacing tuners</a></li>
+        <li><a href="straplocks.html">Straplocks</a></li>
+        <li><a href="correctingintonation.html">Correcting intonation</a></li>
+        <li><a href="adjustneck.html">Adjust neck</a></li>
+      </ul>
+    </nav>
+    <p class="footer__credit">Created by <a href="https://griffedge.github.io/">Griffen Edge</a></p>
+  </footer>
+
+  <script src="scripts/awesomplete.js" async></script>
+  <script src="scripts/quizlib.js" async></script>
+  <script src="scripts/script.js"></script>
+  <script>
+    var quiz = new Quiz('quizTuningYourGuitar', ['c']);
+
+  </script>
+</body>
+
+</html>
